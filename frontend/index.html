@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>現在吃什麼？</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>現在吃什麼？</h1>
+
+
+<div class="form-group">
+<label>價格範圍（0-4）：</label>
+<select id="price">
+<option value="">不限</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label>類型（例如：火鍋、燒烤、早餐）：</label>
+<input type="text" id="rtype" placeholder="輸入關鍵字" />
+</div>
+
+
+<div class="form-group">
+<label>搜尋半徑（公尺）：</label>
+<input type="number" id="radius" value="1500" />
+</div>
+
+
+<button id="search-btn">搜尋餐廳</button>
+
+
+<div id="result"></div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
